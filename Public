@@ -511,3 +511,19 @@ if MemoryState then
     StartAutoSizeNaN()
     StartServerHopLoop()
 end
+
+--========== SETTINGS TAB ==========
+local SettingsTab = Window:CreateTab("Settings", 4483362458)
+
+SettingsTab:CreateSection("Utilities")
+
+SettingsTab:CreateToggle({
+    Name = "💤 Anti-AFK",
+    CurrentValue = false,
+    Flag = "AntiAFK",
+    Callback = function(state)
+        if state then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/evxncodes/mainroblox/main/anti-afk", true))()
+        end
+    end
+})
