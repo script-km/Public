@@ -1,1 +1,529 @@
---[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local j={"\117\084\066\072\087\043\070\052\069\086\056\084\069\075\075\116\076\072\113\111\107\101\061\061";"\083\056\070\068\048\082\084\075\083\074\049\102\083\047\116\109\098\118\048\061","\110\048\052\049\077\087\072\061","\050\049\103\102\048\043\052\053\068\074\101\061";"\116\066\111\077\072\066\050\117","\090\086\069\043\072\047\083\043\070\089\043\085\075\074\080\086";"\102\066\080\089\075\070\083\113","\086\114\113\087\083\088\097\061";"\087\065\080\074\102\055\043\068\105\084\118\055";"\049\066\052\043\114\082\101\061","\068\088\066\109\119\057\112\061";"\068\050\116\082\083\078\087\097\082\116\088\097\105\099\061\061","\083\120\066\112\106\114\048\099\113\051\090\079";"\078\102\069\051\054\070\053\082\054\108\076\061";"\052\088\057\061";"\114\056\086\072\072\084\043\089\110\099\122\069\109\119\118\061","\090\086\069\043\072\047\083\043\070\074\084\053";"\083\101\078\056\077\104\057\061","\070\073\079\055\055\097\056\071\047\083\112\061","\121\066\111\082\116\074\084\085\072\089\048\061","\070\074\084\049\098\074\070\103\073\057\083\043\116\074\070\106\116\074\070\118\073\090\061\061","\043\109\112\105\097\054\100\054\110\068\052\074\072\072\119\069\077\082\098\121\055\089\082\116\103\099\061\061","\119\085\108\069\067\079\101\061";"\053\080\107\104\081\071\051\078\097\090\114\097\052\072\074\115\067\070\112\061","\076\068\066\047\122\081\100\067\084\043\115\050\098\080\073\061","\047\120\098\061","\070\074\070\112\075\047\114\113\098\122\083\102\075\047\069\089\109\066\050\043","\105\097\055\082\076\055\070\077\087\074\114\109\050\090\061\061","\075\066\050\065\087\066\070\112\121\074\054\103\083\089\111\121\066\057\077\061";"\072\049\043\050\111\070\051\049\076\113\073\061","\090\086\069\043\072\047\083\043\048\089\070\106\116\074\043\113\052\101\061\061";"\109\078\120\075\097\073\057\057\073\068\075\100\117\073\079\076\074\074\114\099";"\075\047\069\103\052\086\073\061";"\054\108\104\047\079\103\119\079\072\085\070\113\087\055\104\065";"\116\089\067\121\055\097\075\097\113\065\084\068\052\057\090\061";"\116\083\101\072\072\047\104\119\052\103\103\083";"\069\077\103\118\089\100\056\086";"\098\074\050\054\052\074\077\061";"\113\067\048\122\049\115\099\061","\079\071\054\117\081\077\061\061";"\086\114\086\109\082\098\056\122\122\066\052\066\086\086\105\100\097\077\113\119","\051\048\083\086\048\056\107\122\098\057\084\105\109\084\070\117\116\090\061\061","\088\105\103\118\100\098\102\101\052\051\081\110\080\099\061\061","\101\053\086\071\121\073\101\076\097\083\099\081";"\083\056\043\085\075\057\075\105\098\122\050\120\090\089\054\105\052\074\090\061";"\087\053\101\043\075\078\076\105\087\101\061\061";"\122\069\069\053\103\103\117\056\118\057\115\071\099\049\089\068","\055\106\069\114\113\043\076\061";"\054\087\114\054\051\101\061\061";"\057\069\053\066\075\055\075\069\119\122\066\115","\087\057\075\056\070\057\084\107\050\119\054\120\066\118\107\097","\075\122\043\072\052\119\083\069\052\070\101\089\072\106\098\089\083\101\061\061";"\111\051\084\113","\106\049\043\108";"\043\047\081\106\098\071\076\061","\043\104\103\077\050\085\108\061";"\072\104\047\100\117\080\076\089\121\069\119\068\122\108\078\075\066\119\108\055\117\076\068\107\070\090\052\081";"\100\056\078\079\043\113\055\075\111\086\053\097\121\104\118\061","\122\068\100\081\113\103\122\089\108\109\121\083\047\101\067\061";"\087\074\065\097\052\122\090\082\090\047\105\117\083\057\067\065\102\077\061\061";"\112\100\072\097";"\108\097\047\109\085\112\101\077";"\072\065\078\057","\057\075\089\105\109\113\119\048\076\119\047\043","\043\086\099\103\081\050\072\061","\078\090\077\050\114\090\061\061","\057\082\115\109\050\118\086\115\110\118\110\078\072\075\101\105\116\105\057\061","\070\089\084\105\116\099\061\061","\116\086\069\105\116\074\070\056\109\066\065\043","\048\089\070\120\090\089\080\103\075\090\061\061","\104\085\107\087\047\120\100\066\108\055\078\083\055\049\113\073\120\083\052\075\049\110\082\105\097\083\077\103","\054\116\043\076\098\079\090\043\102\087\112\061","\103\056\047\043\119\098\073\100\079\108\111\120";"\090\086\069\043\072\047\083\043\070\074\080\122\075\089\065\043","\082\086\051\077\074\084\080\104\100\065\113\072\107\101\061\061";"\052\074\084\112\048\102\083\087\102\089\080\102\075\088\114\106\090\120\090\061";"\070\107\099\086\075\074\080\057\067\086\070\122\048\118\049\114";"\116\070\043\107\108\110\121\113\068\077\061\061","\111\085\075\112\105\077\061\061","\087\090\107\050\097\049\051\090\089\078\068\098\054\099\061\061","\076\080\113\075\047\099\061\061","\102\048\073\077\052\082\069\112\116\066\069\069\051\056\054\049\083\099\061\061","\070\056\070\106\116\074\080\103\067\077\061\061","\087\106\082\067\076\053\047\108\077\099\061\061";"\047\107\080\049\075\047\083\054\116\074\084\053\052\074\048\061","\111\085\097\115\087\057\103\050\081\081\068\056\103\107\072\061","\104\054\075\068\066\090\061\061","\106\090\121\070\073\121\107\111";"\112\065\099\102\097\122\108\061","\066\056\090\078\110\068\103\071\121\110\108\061","\121\066\111\089\052\089\049\043\048\089\070\103\116\056\070\103";"\102\120\083\107\080\077\061\061";"\116\074\084\053\052\074\048\061";"\084\119\081\070\111\108\050\043\082\086\066\066\121\101\061\061","\083\056\043\103\075\070\050\043\098\122\075\043\098\101\061\061","\109\084\073\077\087\084\114\086\051\048\043\056\121\048\069\105","\111\048\067\099\099\077\061\061","\052\053\083\104\073\099\061\061","\070\098\115\112\056\083\090\079\122\075\071\080\084\072\106\048\108\054\097\077\066\113\068\119\097\081\120\070\048\109\116\080\116\111\098\069\050\100\120\061";"\112\103\055\111\088\066\118\121\111\101\061\061","\077\047\105\055\112\116\073\112";"\072\070\114\078\083\107\054\122\066\084\105\086\090\102\114\107";"\080\047\057\102\112\098\076\055\053\079\068\086\109\099\061\061","\072\106\054\105\110\119\074\054\109\055\121\065\067\109\116\105\079\112\056\108\073\099\118\061","\071\082\067\113\114\085\076\111\070\076\120\061";"\119\070\070\119\078\050\106\113\110\099\110\043\109\070\120\101\067\050\076\106\048\100\084\118\084\099\110\048\065\121\084\073\043\111\076\061","\048\043\083\049\066\119\070\054\090\048\116\113\090\048\120\097","\112\079\067\061";"\052\100\072\069\077\112\043\119\090\072\110\084\078\071\120\122\121\099\061\061","\100\089\048\075\119\070\050\100\083\055\057\061";"\102\118\043\051\117\104\119\086\066\077\061\061";"\050\074\122\110\067\099\061\061";"\122\098\108\070\089\116\054\103\113\112\116\107\071\099\102\117","\108\100\083\049";"\103\074\103\119\073\088\099\061";"\072\122\043\120\075\090\061\061","\073\109\086\106\084\112\114\070\082\103\098\061","\052\082\070\049\056\112\072\104\056\071\108\061","\043\083\104\054\081\090\120\061","\047\115\068\079\074\065\050\051\100\090\099\061";"\075\056\065\113\052\086\073\061";"\098\056\119\053\048\071\118\061";"\102\119\070\121\075\119\116\054\116\118\065\070\087\088\070\070\087\088\090\061","\085\103\102\047\073\104\120\061";"\114\047\067\078\081\087\056\108","\057\055\085\048\090\048\074\081\068\087\117\075\105\073\109\118";"\090\066\050\120\109\047\075\054\116\074\048\061","\090\068\077\077\051\065\112\066","\112\099\121\120";"\100\076\104\103\108\086\088\117\104\073\073\083";"\053\103\118\086\089\098\108\048\115\084\120\061";"\075\066\069\118\121\118\050\073\070\107\083\074\052\118\073\082","\048\107\069\047\098\074\105\090\048\119\083\082\075\057\049\079";"\076\089\053\086\108\090\061\061","\047\107\080\112\075\066\097\061";"\109\106\070\074\070\106\099\086\052\118\077\065\051\048\073\103\083\043\101\061";"\090\086\069\043\072\047\083\043\121\066\111\077\116\047\090\061";"\078\076\116\121\121\111\069\047\101\090\061\061";"\079\077\084\043\107\077\099\076\078\121\043\119\067\054\113\047\049\104\081\103\086\054\089\097\106\049\054\049","\113\084\076\104\048\052\122\056\072\101\061\061","\102\119\069\078\088\101\061\061";"\109\047\114\111\067\084\075\105\121\056\097\097\098\086\057\061","\099\122\097\101\122\100\075\052\080\054\078\114\076\067\108\061";"\098\086\069\117\089\100\069\077\120\086\078\069\105\097\069\121\117\102\105\117";"\055\110\087\114\099\077\079\109\121\106\076\102\057\101\112\061";"\073\104\083\112\057\122\105\056\077\072\053\107\102\071\108\052\118\050\082\068\118\090\061\061";"\079\078\071\043\072\107\084\105\101\050\055\115";"\112\052\119\100\050\115\082\107\075\086\051\118\110\054\075\106\118\082\057\061","\070\074\083\087\070\057\080\072\048\057\054\054\067\048\107\113","\055\122\090\087\067\088\081\050\105\113\074\072\102\084\067\061";"\057\121\120\107\047\054\117\079\073\101\055\050\056\108\079\089\075\121\072\061";"\083\069\110\080\087\085\056\082\114\114\048\102\106\099\061\061";"\065\084\073\105\068\056\085\054\076\053\067\054\109\113\067\103\115\057\105\069\052\077\061\061";"\101\116\072\071\065\100\055\068\112\087\075\068\071\067\069\085\067\101\089\108\108\066\077\118\098\103\116\122\090\117\119\090","\052\057\047\100\051\102\073\074\088\097\070\089\097\107\080\049\108\066\108\054\102\053\111\079";"\054\084\052\070";"\054\106\115\073\082\051\055\086\075\121\073\061";"\075\086\050\107\072\101\061\061";"\121\048\118\103\070\056\043\050\052\102\043\053\121\118\080\120","\082\080\075\103\082\077\090\078\104\068\072\061";"\099\086\079\110\074\099\061\061";"\111\100\105\043\110\057\047\081\078\067\077\061","\109\047\114\054\109\047\069\082";"\056\089\118\089\110\104\077\061","\110\080\082\103\048\105\102\066\089\115\067\050\104\076\080\053\047\047\098\082\072\080\112\097\078\079\116\049\104\079\089\089\073\116\100\086\077\073\089\090\078\068\109\066\054\101\061\061";"\052\074\080\054\075\119\050\120\098\056\043\085\075\077\061\061";"\065\088\111\057\099\101\061\061";"\049\085\057\043\109\099\082\053\121\069\106\079\102\099\061\061","\103\087\102\090\099\080\054\104\072\069\057\061";"\050\086\114\113\048\102\054\113\052\047\084\118\087\048\084\107","\119\109\102\078\077\053\085\115","\077\112\047\086\121\103\086\087\109\090\061\061","\083\107\084\082\066\102\070\065\102\089\065\103\051\106\043\070","\090\086\069\043\072\047\083\043\090\122\070\120\116\074\080\085","\049\072\105\109\068\099\120\088\067\051\101\061";"\102\067\073\053\084\087\098\114","\080\089\053\053\116\087\112\084\051\078\112\052\076\090\061\061","\082\118\049\112\071\085\107\048\109\071\118\061";"\105\102\113\115\107\099\061\061","\115\055\097\117\049\052\116\050\043\086\052\078\116\117\079\074\115\083\107\047\085\090\061\061","\106\105\097\074\070\055\114\114","\110\056\053\086\050\082\097\061";"\081\099\061\061","\115\066\110\111\109\101\061\061","\067\119\075\066\072\102\054\083\052\057\043\081\109\074\116\048\121\048\112\061";"\106\122\081\111\106\101\048\112\117\048\112\061";"\120\116\100\056\097\110\099\087\048\101\061\061","\084\071\103\087\120\098\072\117\088\107\047\111\079\084\117\117\107\083\075\122\106\077\061\061";"\116\043\050\082\098\047\057\077\050\084\075\120\048\048\050\112\072\070\118\061";"\086\115\072\073\111\112\048\061";"\068\097\110\113\100\085\070\068\097\101\061\061","\098\074\084\105\098\122\067\061","\121\119\083\120\098\084\050\043\098\122\075\105\072\089\048\061";"\075\073\087\050\100\075\083\082\110\116\090\118\048\052\051\116\052\098\073\073\082\090\061\061","\108\112\084\107\086\090\121\115\077\055\108\088","\117\051\073\089\117\090\061\061";"\098\043\067\105\110\070\056\090\122\105\076\055\078\109\122\111";"\051\102\078\119\113\090\061\061","\120\050\087\057\088\100\086\071\084\055\075\108\088\114\055\050\098\098\115\076";"\083\089\070\120\048\074\065\054\051\066\070\103\098\077\061\061";"\121\088\054\057\048\120\084\089\098\070\083\057\050\056\080\049\050\122\090\061","\084\083\115\079\086\043\122\076";"\083\074\105\118\075\082\054\113\072\102\073\086\050\118\043\079\075\118\108\061","\052\088\073\061","\075\043\054\103\067\106\070\089\066\106\084\085\051\102\084\053","\100\070\077\097\080\098\115\075\121\043\068\106\105\078\087\088\121\052\090\061";"\083\089\070\120\048\089\070\103\116\056\043\106\075\090\061\061";"\052\066\084\120\109\099\061\061","\107\107\070\105\083\103\083\100\121\067\052\068","\104\071\107\118\118\050\073\068\080\072\103\085\079\098\118\078\116\118\115\043\087\103\072\061";"\086\068\056\090\052\068\122\071\047\089\067\061","\109\120\050\120\116\043\069\105\098\047\075\114\109\084\099\097";"\075\069\111\081\107\077\061\061","\071\103\076\103\047\055\053\075\077\066\104\102\118\109\078\080\043\111\122\099\117\076\072\061";"\055\047\113\065\084\090\061\061","\116\074\084\082\109\077\061\061","\083\056\043\085\075\057\075\105\098\122\050\120\090\089\054\105\052\074\083\115\075\118\050\112\072\047\050\082","\075\119\075\068\067\118\043\069\121\118\101\111\098\056\077\120","\051\102\075\077\067\102\043\078\102\082\075\107\067\070\069\050\075\066\097\061";"\107\114\073\111";"\071\101\088\069\098\057\074\104\116\090\102\108","\070\089\084\105\116\057\075\113\098\118\050\076\109\066\065\118","\049\088\110\097\054\107\054\109","\053\085\112\061";"\119\070\057\053\098\089\048\061","\053\052\107\102\088\080\056\117\074\049\102\104","\043\085\057\090\113\105\079\098\085\077\073\082\121\108\051\051\106\106\109\085\111\077\061\061";"\073\106\054\070\081\065\080\107\069\089\109\079\054\099\061\061","\111\077\061\061";"\066\056\105\112\050\120\049\107\083\066\112\086\070\106\070\097\090\090\061\061","\102\109\122\083\100\052\085\084\115\043\066\050\086\075\097\073";"\106\085\077\112\077\078\075\119","\116\074\080\082\116\119\069\105\052\056\098\061","\112\116\065\067\067\101\061\061";"\112\085\088\048\108\090\107\055\114\122\081\104";"\084\066\087\073\054\066\083\087\084\086\066\090\100\105\114\112\048\068\104\114\073\099\061\061","\053\082\104\053\071\098\087\102\066\114\065\114\118\067\119\109\111\099\061\061";"\068\065\078\052\079\073\112\107\056\051\076\061","\048\115\110\106\080\121\051\104\103\048\098\116","\066\070\105\119\072\043\043\088\075\088\075\072\090\048\083\079","\050\098\053\071\075\114\098\061";"\070\074\070\112\075\047\114\113\098\122\083\048\052\107\114\112\072\066\050\043\121\066\111\082\116\074\084\085\072\089\048\061";"\117\122\098\052\089\087\068\055\120\110\089\086\057\119\105\073\067\101\061\061","\073\055\084\067\071\085\109\068\043\115\122\068\097\101\108\070\084\043\082\086\110\081\075\078\090\077\061\061","\066\074\069\113\051\066\118\077\109\118\101\077\121\066\043\078";"\070\070\114\050\051\057\075\053\090\118\105\115\050\047\084\103\083\056\108\061","\078\100\119\122\119\074\073\053\085\053\057\068\102\043\108\084";"";"\052\074\070\085";"\083\056\084\085\070\086\114\070\052\057\070\074\121\106\099\097\050\101\061\061","\043\053\075\050\077\056\120\048\074\103\053\112\121\109\115\072\122\051\108\061";"\114\107\068\047\098\072\056\109\087\099\081\043\120\069\068\067\116\116\076\061";"\083\089\070\120\090\089\054\105\052\074\083\103\075\066\097\061","\099\114\090\051\099\090\061\061";"\083\066\105\070\070\070\105\075\116\074\065\057\102\088\083\110\116\099\061\061";"\087\108\110\090\068\049\076\070\109\097\085\077";"\102\086\070\119\048\086\043\106\109\102\057\082","\079\103\081\077\100\090\061\061","\047\054\080\117\121\102\113\097\047\114\068\043\110\090\078\118";"\086\110\057\089\054\086\055\077\054\108\072\061";"\105\108\082\066\108\106\122\067\089\090\068\115\075\055\083\051","\067\056\116\077\116\047\083\120\121\066\083\049\067\047\114\097\051\101\061\061","\083\072\113\067\055\110\101\049\066\051\048\061","\047\107\080\122\072\077\061\061","\114\065\109\108\054\116\099\061","\050\071\080\114\119\116\070\043\075\054\084\082\073\105\075\070\100\079\051\048";"\076\099\065\053\107\054\108\069\104\099\052\079\043\111\120\061";"\077\118\121\116\090\050\090\061","\109\047\050\056\109\066\065\043";"\114\078\098\084\104\113\065\073\083\101\050\057\085\074\099\080\068\052\054\116\088\090\061\061","\109\099\048\052\076\079\079\084\121\078\076\101\100\079\050\077\120\103\048\102","\087\101\061\061","\110\090\074\112\086\122\084\090\108\043\048\061","\121\043\050\115\102\118\083\043\072\089\080\118\075\090\061\061","\111\048\108\122\121\109\105\057\117\080\077\047\097\056\087\069\101\105\100\090\074\099\061\061";"\089\066\113\104\070\050\070\114\067\085\076\078\114\083\068\048\120\097\106\114\119\043\054\114\101\099\071\109\108\112\120\114\106\043\049\106\080\043\082\117\122\073\117\117\065\043\075\108\107\070\105\055";"\081\077\061\061";"\112\084\097\057\085\089\071\053\116\106\069\105\076\098\086\069","\108\121\090\070\099\121\049\101\098\052\112\069\120\114\121\121\056\086\104\102\083\053\100\105\111\085\120\057\072\077\061\061";"\099\053\053\080\051\116\070\053\112\068\113\078\103\090\061\061","\068\090\057\105\118\108\107\057\112\072\081\079\087\088\055\101\118\121\114\118\071\077\061\061";"\098\120\043\065\109\120\070\078\121\088\070\114\070\043\073\103\051\047\073\061","\098\056\084\085\075\074\080\049","\077\070\098\078\085\072\097\121\103\068\070\120","\072\089\080\085\072\089\084\120","\083\120\075\081\051\118\083\087\070\107\084\065\048\118\073\077\067\074\048\061";"\085\109\116\069\050\069\115\086";"\069\111\054\081\072\087\118\101\048\073\070\072\097\120\072\072\115\117\077\069","\072\110\108\073\069\073\057\069\056\069\073\061";"\072\072\120\074\049\052\086\054\103\118\049\098\107\049\051\105\104\103\085\054\098\089\118\061";"\098\114\099\053\122\070\099\080\115\107\099\065\075\102\106\055","\077\116\089\078","\097\111\117\066\082\057\085\047\101\085\068\075\108\098\102\055\120\109\069\071\086\080\113\106\121\101\061\061";"\090\086\069\043\072\047\083\043\102\074\084\053\075\066\077\061","\070\057\090\086\109\048\067\089\050\122\069\106\121\084\069\082\070\086\048\061";"\047\084\114\109\114\052\090\061","\078\073\120\071\109\090\089\111\052\120\090\061";"\052\109\109\088\054\099\118\061","\070\051\086\077\107\119\050\049\043\077\108\061","\077\107\106\106\098\090\073\097\053\099\061\061";"\083\120\116\106\070\119\069\083\072\107\084\115\070\084\073\089\121\101\061\061";"\072\117\067\076\080\049\103\082\053\068\110\090\103\107\056\068\106\053\049\053\082\119\068\067\100\081\066\079\117\117\107\086\068\089\078\110\054\077\061\061";"\048\076\066\053\057\090\061\061","\089\119\098\055\043\071\047\101\075\055\048\061";"\053\110\048\049\077\077\061\061","\102\085\084\087\099\088\119\077\050\108\098\122";"\083\089\070\120\083\074\070\082\072\089\070\085\075\074\084\085\116\119\067\061","\111\110\106\043\101\118\121\098\118\080\053\070\121\053\075\056\118\100\079\050\088\055\047\106\053\109\077\061";"\083\047\084\107\109\047\114\048\052\089\080\112","\056\079\069\068\071\084\109\081\057\071\118\084\120\099\077\061";"\097\067\051\071\054\105\073\084\097\097\107\106\050\077\076\055\090\116\108\061","\111\080\055\079\086\098\071\053\068\079\043\073\105\099\061\061";"\054\072\073\089\087\051\057\061","\090\120\075\090\067\048\049\107\075\066\118\097\075\084\116\081\050\099\061\061","\090\043\054\073\072\056\065\086\116\047\084\081\090\056\084\082\050\047\076\061","\121\122\072\082\102\089\048\120\102\119\043\079\050\120\067\082\050\077\061\061","\074\084\090\099\102\076\089\055\065\100\118\075\103\066\057\122\043\048\065\106\109\077\061\061";"\072\106\043\075\109\119\083\090\070\048\120\089\070\056\075\048","\082\105\053\054\103\074\090\100\119\067\051\110\116\075\049\073\102\101\122\077\082\054\107\068\054\047\122\067\116\072\043\107\107\043\115\112\122\057\106\055\049\099\061\061","\056\104\101\115\075\052\090\061";"\103\102\121\115";"\075\056\043\103\075\047\083\113\116\066\050\076\109\066\111\120\075\047\069\043\098\086\090\061";"\116\057\115\122\056\077\061\061";"\118\065\074\088\107\099\061\061","\121\106\103\087\050\099\061\061","\081\072\101\071\121\115\051\057\078\077\107\068\085\069\097\061","\107\118\107\111\084\121\048\061";"\085\101\069\073\119\057\106\079\068\118\098\061";"\121\084\050\114\052\102\083\053\070\084\070\106\075\043\116\112\083\070\099\061";"\116\112\083\082\079\112\120\061","\066\070\075\053\071\054\067\043\047\118\072\088\103\077\061\061";"\109\070\104\103","\080\108\117\1
+--========== SERVICES ==========
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+
+local LocalPlayer = Players.LocalPlayer
+local muscleEvent = LocalPlayer.muscleEvent
+local changeSpeedSizeRemote = ReplicatedStorage.rEvents.changeSpeedSizeRemote
+
+--========== RAYFIELD UI ==========
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "NOLIMIT",
+	LoadingTitle = "By Nolimit",
+	LoadingSubtitle = "MUSCLE LEGENDS SCRIPT 💪",
+	ConfigurationSaving = {
+		Enabled = false,
+	}
+})
+
+--========== TABS ==========
+local MainTab = Window:CreateTab("Main", 4483362458)
+local RebirthTab = Window:CreateTab("Rebirth", 4483362458)
+local RockTab = Window:CreateTab("Rocks", 4483362458)
+local TeleportTab = Window:CreateTab("Teleport", 4483362458)
+
+--========== UTILITIES ==========
+local function gettool()
+	for _, v in pairs(LocalPlayer.Backpack:GetChildren()) do
+		if v.Name == "Punch" and LocalPlayer.Character:FindFirstChild("Humanoid") then
+			LocalPlayer.Character.Humanoid:EquipTool(v)
+		end
+	end
+	muscleEvent:FireServer("punch", "leftHand")
+	muscleEvent:FireServer("punch", "rightHand")
+end
+
+local function fireTouchRock(rock)
+	local char = LocalPlayer.Character
+	if char and char:FindFirstChild("LeftHand") and char:FindFirstChild("RightHand") then
+		firetouchinterest(rock, char.RightHand, 0)
+		firetouchinterest(rock, char.RightHand, 1)
+		firetouchinterest(rock, char.LeftHand, 0)
+		firetouchinterest(rock, char.LeftHand, 1)
+		gettool()
+	end
+end
+
+--========== FAST PUNCH HANDLER ==========
+local function startFastPunch()
+	if _G.fastPunchRunning then return end
+	_G.fastPunchRunning = true
+	task.spawn(function()
+		while _G.fastPunchRunning do
+			local punch = LocalPlayer.Backpack:FindFirstChild("Punch")
+			if punch then
+				punch.Parent = LocalPlayer.Character
+				if punch:FindFirstChild("attackTime") then
+					punch.attackTime.Value = 0
+				end
+			end
+			local punchTool = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Punch")
+			if punchTool then punchTool:Activate() end
+			task.wait()
+		end
+	end)
+end
+
+local function stopFastPunch()
+	_G.fastPunchRunning = false
+	local punch = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Punch")
+	if punch then punch.Parent = LocalPlayer.Backpack end
+end
+
+--========== MAIN TAB ==========
+
+-- Auto Punch
+MainTab:CreateToggle({
+	Name = "Auto Punch",
+	CurrentValue = false,
+	Callback = function(Value)
+		if Value then
+			startFastPunch()
+		else
+			stopFastPunch()
+		end
+	end,
+})
+
+-- Auto Weight
+MainTab:CreateToggle({
+	Name = "Auto Weight",
+	CurrentValue = false,
+	Callback = function(Value)
+		_G.AutoWeight = Value
+		task.spawn(function()
+			while _G.AutoWeight do
+				local tool = LocalPlayer.Backpack:FindFirstChild("Weight")
+				if tool then
+					LocalPlayer.Character.Humanoid:EquipTool(tool)
+				end
+				muscleEvent:FireServer("rep")
+				task.wait(0.1)
+			end
+		end)
+	end,
+})
+
+-- Auto Pushups
+MainTab:CreateToggle({
+	Name = "Auto Pushups",
+	CurrentValue = false,
+	Callback = function(Value)
+		_G.AutoPushups = Value
+		task.spawn(function()
+			while _G.AutoPushups do
+				local tool = LocalPlayer.Backpack:FindFirstChild("Pushups")
+				if tool then
+					LocalPlayer.Character.Humanoid:EquipTool(tool)
+				end
+				muscleEvent:FireServer("rep")
+				task.wait(0.1)
+			end
+		end)
+	end,
+})
+
+-- Auto Handstands
+MainTab:CreateToggle({
+	Name = "Auto Handstands",
+	CurrentValue = false,
+	Callback = function(Value)
+		_G.AutoHandstands = Value
+		task.spawn(function()
+			while _G.AutoHandstands do
+				local tool = LocalPlayer.Backpack:FindFirstChild("Handstands")
+				if tool then
+					LocalPlayer.Character.Humanoid:EquipTool(tool)
+				end
+				muscleEvent:FireServer("rep")
+				task.wait(0.1)
+			end
+		end)
+	end,
+})
+
+-- Auto Situps
+MainTab:CreateToggle({
+	Name = "Auto Situps",
+	CurrentValue = false,
+	Callback = function(Value)
+		_G.AutoSitups = Value
+		task.spawn(function()
+			while _G.AutoSitups do
+				local tool = LocalPlayer.Backpack:FindFirstChild("Situps")
+				if tool then
+					LocalPlayer.Character.Humanoid:EquipTool(tool)
+				end
+				muscleEvent:FireServer("rep")
+				task.wait(0.1)
+			end
+		end)
+	end,
+})
+
+-- Auto Size 1
+MainTab:CreateToggle({
+	Name = "Auto Size 1",
+	CurrentValue = false,
+	Callback = function(Value)
+		_G.sizeActive = Value
+		task.spawn(function()
+			while _G.sizeActive do
+				local char = LocalPlayer.Character
+				if char and char:FindFirstChildOfClass("Humanoid") then
+					changeSpeedSizeRemote:InvokeServer("changeSize", 1)
+				end
+				task.wait(0.05)
+			end
+		end)
+	end,
+})
+
+-- Auto TP to Muscle King
+MainTab:CreateToggle({
+	Name = "Auto TP to Muscle King",
+	CurrentValue = false,
+	Callback = function(Value)
+		_G.teleportActive = Value
+		task.spawn(function()
+			while _G.teleportActive do
+				if LocalPlayer.Character then
+					LocalPlayer.Character:MoveTo(Vector3.new(-8646, 17, -5738))
+				end
+				task.wait()
+			end
+		end)
+	end,
+})
+
+-- Gamepass AutoLift Button
+MainTab:CreateButton({
+	Name = "Gamepass AutoLift",
+	Callback = function()
+		local gamepassFolder = game:GetService("ReplicatedStorage"):WaitForChild("gamepassIds")
+		local player = game:GetService("Players").LocalPlayer
+		if not player:FindFirstChild("ownedGamepasses") then
+			local folder = Instance.new("Folder")
+			folder.Name = "ownedGamepasses"
+			folder.Parent = player
+		end
+
+		for _, gamepass in pairs(gamepassFolder:GetChildren()) do
+			local value = Instance.new("IntValue")
+			value.Name = gamepass.Name
+			value.Value = gamepass.Value
+			value.Parent = player.ownedGamepasses
+		end
+		print("AutoLift gamepasses unlocked!")
+	end,
+	Description = "Unlock AutoLift Passe"
+})
+
+--========== REBIRTH TAB ==========
+RebirthTab:CreateLabel("♻ Rebirth Settings")
+
+local targetRebirthValue = 0
+local rebirthLoop = false
+
+RebirthTab:CreateInput({
+	Name = "Target Rebirth",
+	PlaceholderText = "Enter target rebirths",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(txt)
+		local val = tonumber(txt)
+		if val then
+			targetRebirthValue = val
+		end
+	end,
+})
+
+RebirthTab:CreateToggle({
+	Name = "Auto Rebirth on Target Rebirths",
+	CurrentValue = false,
+	Callback = function(state)
+		rebirthLoop = state
+		if state then
+			task.spawn(function()
+				while rebirthLoop do
+					if LocalPlayer.leaderstats.Rebirths.Value >= targetRebirthValue then
+						rebirthLoop = false
+						game.StarterGui:SetCore("SendNotification", {
+							Title = "✅ Done!",
+							Text = "Reached " .. tostring(targetRebirthValue) .. " rebirths",
+							Duration = 5
+						})
+						break
+					end
+					ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+					task.wait(0.2)
+				end
+			end)
+		end
+	end,
+})
+
+--========== ROCK TAB ==========
+local function createRockToggle(tab, rockName, durability)
+	tab:CreateToggle({
+		Name = "Auto Farm: " .. rockName,
+		CurrentValue = false,
+		Callback = function(Value)
+			_G["auto_" .. rockName:gsub(" ", "_")] = Value
+
+			if Value then
+				startFastPunch() -- enable fast punch with rocks
+
+				-- rock farming loop
+				task.spawn(function()
+					while _G["auto_" .. rockName:gsub(" ", "_")] do
+						if LocalPlayer.Durability.Value >= durability then
+							for _, v in pairs(Workspace.machinesFolder:GetDescendants()) do
+								if v.Name == "neededDurability" and v.Value == durability and v.Parent and v.Parent:FindFirstChild("Rock") then
+									fireTouchRock(v.Parent.Rock)
+								end
+							end
+						end
+						task.wait()
+					end
+				end)
+			else
+				-- stop fast punch only if no other rock farms are active
+				local anyActive = false
+				for _, obj in pairs(_G) do
+					if tostring(obj):match("auto_") and obj == true then
+						anyActive = true
+						break
+					end
+				end
+				if not anyActive then
+					stopFastPunch()
+				end
+			end
+		end,
+	})
+end
+
+createRockToggle(RockTab, "Tiny Island Rock", 0)
+createRockToggle(RockTab, "Starter Island Rock", 100)
+createRockToggle(RockTab, "Legend Beach Rock", 5000)
+createRockToggle(RockTab, "Frost Gym Rock", 150000)
+createRockToggle(RockTab, "Mythical Gym Rock", 400000)
+createRockToggle(RockTab, "Eternal Gym Rock", 750000)
+createRockToggle(RockTab, "Legend Gym Rock", 1000000)
+createRockToggle(RockTab, "Muscle King Gym Rock", 5000000)
+createRockToggle(RockTab, "Ancient Jungle Rock", 10000000)
+
+--========== TELEPORT TAB ==========
+TeleportTab:CreateLabel(" Teleport Locations")
+
+local function createTPButton(name, position, message)
+	TeleportTab:CreateButton({
+		Name = name,
+		Callback = function()
+			local player = game.Players.LocalPlayer
+			local character = player.Character or player.CharacterAdded:Wait()
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			humanoidRootPart.CFrame = position
+
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Teleport",
+				Text = "Teleported to " .. message,
+				Duration = 3
+			})
+		end
+	})
+end
+
+createTPButton("Spawn", CFrame.new(2, 8, 115), "Spawn")
+createTPButton("Secret Area", CFrame.new(1947, 2, 6191), "Secret Area")
+createTPButton("Tiny Island", CFrame.new(-34, 7, 1903), "Tiny Island")
+createTPButton("Frozen", CFrame.new(-2600.00244, 3.67, -403.88, 0.08736, 0, 0.99617, 0, 1, 0, -0.99617, 0, 0.08736), "Frozen")
+createTPButton("Mythical", CFrame.new(2255, 7, 1071), "Mythical")
+createTPButton("Inferno", CFrame.new(-6768, 7, -1287), "Inferno")
+createTPButton("Legend", CFrame.new(4604, 991, -3887), "Legend")
+createTPButton("Muscle King Gym", CFrame.new(-8646, 17, -5738), "Muscle King Gym")
+createTPButton("Jungle", CFrame.new(-8659, 6, 2384), "Jungle")
+createTPButton("Brawl Lava", CFrame.new(4471, 119, -8836), "Brawl Lava")
+createTPButton("Brawl Desert", CFrame.new(960, 17, -7398), "Brawl Desert")
+createTPButton("Brawl Regular", CFrame.new(-1849, 20, -6335), "Brawl Regular")
+
+--========== KILLS TAB ==========
+local KillsTab = Window:CreateTab("Kills", 4483362458)
+local AutoKillEnabled = false
+local autoSizeLoop
+local serverHopLoop
+local LockPosition = CFrame.new(-31.8626, 6.0588, 2087.8867)
+local fileName = "AutoKillMode1.json"
+
+-- Memory functions
+local function SaveMemory(state)
+    if writefile then
+        writefile(fileName, tostring(state))
+    end
+end
+
+local function LoadMemory()
+    if isfile and isfile(fileName) then
+        local content = readfile(fileName)
+        return content == "true"
+    end
+    return false
+end
+
+local MemoryState = LoadMemory()
+
+-- Equip & Punch
+local function EquipPunch()
+    local tool = LocalPlayer.Backpack:FindFirstChild("Punch")
+    if tool then
+        LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):EquipTool(tool)
+    end
+end
+
+local function DoPunch()
+    local char = LocalPlayer.Character
+    if not char then return end
+    local punch = LocalPlayer.Backpack:FindFirstChild("Punch") or char:FindFirstChild("Punch")
+    if punch then
+        if punch:FindFirstChild("attackTime") then
+            punch.attackTime.Value = 0.001
+        end
+        for i = 1, 5 do pcall(function() punch:Activate() end) end
+    end
+end
+
+-- Auto Kill Loop
+local function AutoKillLoop(lockPosition)
+    task.spawn(function()
+        while AutoKillEnabled do
+            local char = LocalPlayer.Character
+            if char and char:FindFirstChild("HumanoidRootPart") then
+                if lockPosition then
+                    char.HumanoidRootPart.CFrame = lockPosition
+                end
+                EquipPunch()
+                DoPunch()
+                local rHand = char:FindFirstChild("RightHand")
+                local lHand = char:FindFirstChild("LeftHand")
+                if rHand and lHand then
+                    for _, target in ipairs(Players:GetPlayers()) do
+                        if target ~= LocalPlayer and target.Character then
+                            if not pcall(function() return LocalPlayer:IsFriendsWith(target.UserId) end) or not LocalPlayer:IsFriendsWith(target.UserId) then
+                                local root = target.Character:FindFirstChild("HumanoidRootPart")
+                                if root then
+                                    firetouchinterest(rHand, root, 1)
+                                    firetouchinterest(lHand, root, 1)
+                                    firetouchinterest(rHand, root, 0)
+                                    firetouchinterest(lHand, root, 0)
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+            task.wait(0.01)
+        end
+    end)
+end
+
+-- Auto Size NaN
+local function StartAutoSizeNaN()
+    if autoSizeLoop then return end
+    autoSizeLoop = task.spawn(function()
+        while AutoKillEnabled do
+            pcall(function()
+                ReplicatedStorage.rEvents.changeSpeedSizeRemote:InvokeServer("changeSize", 0/0)
+            end)
+            task.wait()
+        end
+    end)
+end
+
+local function StopAutoSizeNaN()
+    if autoSizeLoop then
+        task.cancel(autoSizeLoop)
+        autoSizeLoop = nil
+    end
+end
+
+-- Server Hop
+local function StartServerHopLoop()
+    if serverHopLoop then return end
+    serverHopLoop = task.spawn(function()
+        while AutoKillEnabled do
+            task.wait(60)
+            pcall(function()
+                local servers = {}
+                local cursor = ""
+                local gameId = 3623096087
+
+                repeat  
+                    local response = game:HttpGet(
+                        "https://games.roblox.com/v1/games/"..gameId.."/servers/Public?sortOrder=Asc&limit=100"..(cursor ~= "" and "&cursor="..cursor or "")
+                    )  
+                    local data = HttpService:JSONDecode(response)  
+                    for _, server in ipairs(data.data) do  
+                        if server.playing >= 15 and server.playing <= 20 and server.id ~= game.JobId then  
+                            TeleportService:TeleportToPlaceInstance(gameId, server.id, LocalPlayer)  
+                            return  
+                        end  
+                    end  
+                    cursor = data.nextPageCursor or ""  
+                until cursor == "" or not cursor  
+            end)  
+        end  
+    end)
+end
+
+local function StopServerHopLoop()
+    if serverHopLoop then
+        task.cancel(serverHopLoop)
+        serverHopLoop = nil
+    end
+end
+
+--========== GUI CONTROL (ONE SWITCH) ==========
+KillsTab:CreateToggle({
+    Name = "OP KILLING",
+    CurrentValue = MemoryState or false,
+    Callback = function(Value)
+        AutoKillEnabled = Value
+        SaveMemory(Value)
+        if Value then
+            AutoKillLoop(LockPosition)
+            StartAutoSizeNaN()
+            StartServerHopLoop()
+        else
+            StopAutoSizeNaN()
+            StopServerHopLoop()
+        end
+    end
+})
+
+-- Auto-enable if memory saved ON
+if MemoryState then
+    AutoKillEnabled = true
+    AutoKillLoop(LockPosition)
+    StartAutoSizeNaN()
+    StartServerHopLoop()
+end
+
+--========== SETTINGS TAB ==========
+local SettingsTab = Window:CreateTab("Settings", 4483362458)
+
+SettingsTab:CreateSection("Utilities")
+
+SettingsTab:CreateToggle({
+    Name = "💤 Anti-AFK",
+    CurrentValue = false,
+    Flag = "AntiAFK",
+    Callback = function(state)
+        if state then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/evxncodes/mainroblox/main/anti-afk", true))()
+        end
+    end
+})
