@@ -23,7 +23,6 @@ local Window = Rayfield:CreateWindow({
 --========== TABS ==========
 local MainTab = Window:CreateTab("Main", 4483362458)
 local RebirthTab = Window:CreateTab("Rebirth", 4483362458)
-local RockTab = Window:CreateTab("Rocks", 4483362458)
 local TeleportTab = Window:CreateTab("Teleport", 4483362458)
 
 --========== UTILITIES ==========
@@ -76,151 +75,356 @@ end
 
 --========== MAIN TAB ==========
 
--- Auto Punch
+-- TikTok Follow Button (Top)
+MainTab:CreateButton({
+    Name = "Follow Me on TikTok",
+    Callback = function()
+        local tiktokURL = "https://vm.tiktok.com/ZSHneVnL1mm8c-AO4BX/"
+        if syn and syn.request then
+            syn.request({Url = tiktokURL, Method = "GET"})
+        else
+            setclipboard(tiktokURL)
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "TikTok Link",
+                Text = "Link copied to clipboard!",
+                Duration = 5
+            })
+        end
+    end,
+    Description = "Click to follow me on TikTok!"
+})
+
+-- No Clip Toggle
 MainTab:CreateToggle({
-	Name = "Auto Punch",
-	CurrentValue = false,
-	Callback = function(Value)
-		if Value then
-			startFastPunch()
-		else
-			stopFastPunch()
-		end
-	end,
+    Name = "No Clip",
+    CurrentValue = false,
+    Callback = function(state)
+        _G.NoClipEnabled = state
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+        if state then
+            -- KeyDown listener to toggle collision off
+            _G.NoClipConnection = game:GetService("RunService").Stepped:Connect(function()
+                if humanoidRootPart then
+                    humanoidRootPart.CanCollide = false
+                end
+            end)
+        else
+            if _G.NoClipConnection then
+                _G.NoClipConnection:Disconnect()
+            end
+            if humanoidRootPart then
+                humanoidRootPart.CanCollide = true
+            end
+        end
+    end
+})
+
+-- Infinite Jump Toggle
+MainTab:CreateToggle({
+    Name = "Infinite Jump",
+    CurrentValue = false,
+    Callback = function(state)
+        _G.InfiniteJumpEnabled = state
+
+        if state then
+            _G.JumpConnection = game:GetService("UserInputService").JumpRequest:Connect(function()
+                local player = game.Players.LocalPlayer
+                local character = player.Character or player.CharacterAdded:Wait()
+                local humanoid = character:FindFirstChild("Humanoid")
+                if humanoid then
+                    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+                end
+            end)
+        else
+            if _G.JumpConnection then
+                _G.JumpConnection:Disconnect()
+            end
+        end
+    end
+})
+
+-- WalkSpeed Slider
+MainTab:CreateSlider({
+    Name = "WalkSpeed",
+    Range = {100, 1000},
+    Increment = 1,
+    CurrentValue = 100,
+    Callback = function(Value)
+        if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
+            LocalPlayer.Character.Humanoid.WalkSpeed = Value
+        end
+    end,
+})
+
+--========== FARMING TAB ==========
+local FarmingTab = Window:CreateTab("Farming", 4483362458)
+
+-- Auto Punch
+FarmingTab:CreateToggle({
+    Name = "Auto Punch",
+    CurrentValue = false,
+    Callback = function(Value)
+        if Value then
+            startFastPunch()
+        else
+            stopFastPunch()
+        end
+    end,
 })
 
 -- Auto Weight
-MainTab:CreateToggle({
-	Name = "Auto Weight",
-	CurrentValue = false,
-	Callback = function(Value)
-		_G.AutoWeight = Value
-		task.spawn(function()
-			while _G.AutoWeight do
-				local tool = LocalPlayer.Backpack:FindFirstChild("Weight")
-				if tool then
-					LocalPlayer.Character.Humanoid:EquipTool(tool)
-				end
-				muscleEvent:FireServer("rep")
-				task.wait(0.1)
-			end
-		end)
-	end,
+FarmingTab:CreateToggle({
+    Name = "Auto Weight",
+    CurrentValue = false,
+    Callback = function(Value)
+        _G.AutoWeight = Value
+        task.spawn(function()
+            while _G.AutoWeight do
+                local tool = LocalPlayer.Backpack:FindFirstChild("Weight")
+                if tool then
+                    LocalPlayer.Character.Humanoid:EquipTool(tool)
+                end
+                muscleEvent:FireServer("rep")
+                task.wait(0.1)
+            end
+        end)
+    end,
 })
 
 -- Auto Pushups
-MainTab:CreateToggle({
-	Name = "Auto Pushups",
-	CurrentValue = false,
-	Callback = function(Value)
-		_G.AutoPushups = Value
-		task.spawn(function()
-			while _G.AutoPushups do
-				local tool = LocalPlayer.Backpack:FindFirstChild("Pushups")
-				if tool then
-					LocalPlayer.Character.Humanoid:EquipTool(tool)
-				end
-				muscleEvent:FireServer("rep")
-				task.wait(0.1)
-			end
-		end)
-	end,
+FarmingTab:CreateToggle({
+    Name = "Auto Pushups",
+    CurrentValue = false,
+    Callback = function(Value)
+        _G.AutoPushups = Value
+        task.spawn(function()
+            while _G.AutoPushups do
+                local tool = LocalPlayer.Backpack:FindFirstChild("Pushups")
+                if tool then
+                    LocalPlayer.Character.Humanoid:EquipTool(tool)
+                end
+                muscleEvent:FireServer("rep")
+                task.wait(0.1)
+            end
+        end)
+    end,
 })
 
 -- Auto Handstands
-MainTab:CreateToggle({
-	Name = "Auto Handstands",
-	CurrentValue = false,
-	Callback = function(Value)
-		_G.AutoHandstands = Value
-		task.spawn(function()
-			while _G.AutoHandstands do
-				local tool = LocalPlayer.Backpack:FindFirstChild("Handstands")
-				if tool then
-					LocalPlayer.Character.Humanoid:EquipTool(tool)
-				end
-				muscleEvent:FireServer("rep")
-				task.wait(0.1)
-			end
-		end)
-	end,
+FarmingTab:CreateToggle({
+    Name = "Auto Handstands",
+    CurrentValue = false,
+    Callback = function(Value)
+        _G.AutoHandstands = Value
+        task.spawn(function()
+            while _G.AutoHandstands do
+                local tool = LocalPlayer.Backpack:FindFirstChild("Handstands")
+                if tool then
+                    LocalPlayer.Character.Humanoid:EquipTool(tool)
+                end
+                muscleEvent:FireServer("rep")
+                task.wait(0.1)
+            end
+        end)
+    end,
 })
 
 -- Auto Situps
-MainTab:CreateToggle({
-	Name = "Auto Situps",
-	CurrentValue = false,
-	Callback = function(Value)
-		_G.AutoSitups = Value
-		task.spawn(function()
-			while _G.AutoSitups do
-				local tool = LocalPlayer.Backpack:FindFirstChild("Situps")
-				if tool then
-					LocalPlayer.Character.Humanoid:EquipTool(tool)
-				end
-				muscleEvent:FireServer("rep")
-				task.wait(0.1)
-			end
-		end)
-	end,
+FarmingTab:CreateToggle({
+    Name = "Auto Situps",
+    CurrentValue = false,
+    Callback = function(Value)
+        _G.AutoSitups = Value
+        task.spawn(function()
+            while _G.AutoSitups do
+                local tool = LocalPlayer.Backpack:FindFirstChild("Situps")
+                if tool then
+                    LocalPlayer.Character.Humanoid:EquipTool(tool)
+                end
+                muscleEvent:FireServer("rep")
+                task.wait(0.1)
+            end
+        end)
+    end,
 })
 
--- Auto Size 1
-MainTab:CreateToggle({
-	Name = "Auto Size 1",
-	CurrentValue = false,
-	Callback = function(Value)
-		_G.sizeActive = Value
-		task.spawn(function()
-			while _G.sizeActive do
-				local char = LocalPlayer.Character
-				if char and char:FindFirstChildOfClass("Humanoid") then
-					changeSpeedSizeRemote:InvokeServer("changeSize", 1)
-				end
-				task.wait(0.05)
-			end
-		end)
-	end,
+--========== ROCK FARMS ==========
+local function createRockToggle(tab, rockName, durability)
+    tab:CreateToggle({
+        Name = "Auto Farm: " .. rockName,
+        CurrentValue = false,
+        Callback = function(Value)
+            _G["auto_" .. rockName:gsub(" ", "_")] = Value
+
+            if Value then
+                startFastPunch() -- enable fast punch with rocks
+
+                -- rock farming loop
+                task.spawn(function()
+                    while _G["auto_" .. rockName:gsub(" ", "_")] do
+                        if LocalPlayer.Durability.Value >= durability then
+                            for _, v in pairs(Workspace.machinesFolder:GetDescendants()) do
+                                if v.Name == "neededDurability" and v.Value == durability and v.Parent and v.Parent:FindFirstChild("Rock") then
+                                    fireTouchRock(v.Parent.Rock)
+                                end
+                            end
+                        end
+                        task.wait()
+                    end
+                end)
+            else
+                -- stop fast punch only if no other rock farms are active
+                local anyActive = false
+                for k, obj in pairs(_G) do
+                    if tostring(k):match("auto_") and obj == true then
+                        anyActive = true
+                        break
+                    end
+                end
+                if not anyActive then
+                    stopFastPunch()
+                end
+            end
+        end,
+    })
+end
+
+-- Add all rocks into Farming Tab
+createRockToggle(FarmingTab, "Tiny Island Rock", 0)
+createRockToggle(FarmingTab, "Starter Island Rock", 100)
+createRockToggle(FarmingTab, "Legend Beach Rock", 5000)
+createRockToggle(FarmingTab, "Frost Gym Rock", 150000)
+createRockToggle(FarmingTab, "Mythical Gym Rock", 400000)
+createRockToggle(FarmingTab, "Eternal Gym Rock", 750000)
+createRockToggle(FarmingTab, "Legend Gym Rock", 1000000)
+createRockToggle(FarmingTab, "Muscle King Gym Rock", 5000000)
+createRockToggle(FarmingTab, "Ancient Jungle Rock", 10000000)
+
+--========== PETS TAB ==========
+local PetsTab = Window:CreateTab("Pets", 4483362458)
+
+local selectedPet = "Neon Guardian"
+PetsTab:CreateDropdown({
+    Name = "Select Pet",
+    Options = {
+        "Neon Guardian",
+        "Blue Birdie",
+        "Blue Bunny",
+        "Blue Firecaster",
+        "Blue Pheonix",
+        "Crimson Falcon",
+        "Cybernetic Showdown Dragon",
+        "Dark Golem",
+        "Dark Legends Manticore",
+        "Dark Vampy",
+        "Darkstar Hunter",
+        "Eternal Strike Leviathan",
+        "Frostwave Legends Penguin",
+        "Gold Warrior",
+        "Golden Pheonix",
+        "Golden Viking",
+        "Green Butterfly",
+        "Green Firecaster",
+        "Infernal Dragon",
+        "Lightning Strike Phantom",
+        "Magic Butterfly",
+        "Muscle Sensei",
+        "Orange Hedgehog",
+        "Orange Pegasus",
+        "Phantom Genesis Dragon",
+        "Purple Dragon",
+        "Purple Falcon",
+        "Red Dragon",
+        "Red Firecaster",
+        "Red Kitty",
+        "Silver Dog",
+        "Ultimate Supernova Pegasus",
+        "Ultra Birdie",
+        "White Pegasus",
+        "White Pheonix",
+        "Yellow Butterfly",
+    },
+    CurrentOption = {"Neon Guardian"},
+    Callback = function(option)
+        selectedPet = option[1]
+    end,
 })
 
--- Auto TP to Muscle King
-MainTab:CreateToggle({
-	Name = "Auto TP to Muscle King",
-	CurrentValue = false,
-	Callback = function(Value)
-		_G.teleportActive = Value
-		task.spawn(function()
-			while _G.teleportActive do
-				if LocalPlayer.Character then
-					LocalPlayer.Character:MoveTo(Vector3.new(-8646, 17, -5738))
-				end
-				task.wait()
-			end
-		end)
-	end,
+PetsTab:CreateToggle({
+    Name = "Auto Open Pet",
+    CurrentValue = false,
+    Callback = function(state)
+        _G.AutoHatchPet = state
+        if state then
+            task.spawn(function()
+                while _G.AutoHatchPet and selectedPet ~= "" do
+                    local petToOpen = ReplicatedStorage.cPetShopFolder:FindFirstChild(selectedPet)
+                    if petToOpen then
+                        ReplicatedStorage.cPetShopRemote:InvokeServer(petToOpen)
+                    end
+                    task.wait(0.1)
+                end
+            end)
+        end
+    end,
 })
 
--- Gamepass AutoLift Button
-MainTab:CreateButton({
-	Name = "Gamepass AutoLift",
-	Callback = function()
-		local gamepassFolder = game:GetService("ReplicatedStorage"):WaitForChild("gamepassIds")
-		local player = game:GetService("Players").LocalPlayer
-		if not player:FindFirstChild("ownedGamepasses") then
-			local folder = Instance.new("Folder")
-			folder.Name = "ownedGamepasses"
-			folder.Parent = player
-		end
+--========== AURAS ==========
+local selectedAura = "Blue Aura"
+PetsTab:CreateDropdown({
+    Name = "Select Aura",
+    Options = {
+        "Astral Electro",
+        "Azure Tundra",
+        "Blue Aura",
+        "Dark Electro",
+        "Dark Lightning",
+        "Dark Storm",
+        "Electro",
+        "Enchanted Mirage",
+        "Entropic Blast",
+        "Eternal Megastrike",
+        "Grand Supernova",
+        "Green Aura",
+        "Inferno",
+        "Lightning",
+        "Muscle King",
+        "Power Lightning",
+        "Purple Aura",
+        "Purple Nova",
+        "Red Aura",
+        "Supernova",
+        "Ultra Inferno",
+        "Ultra Mirage",
+        "Unstable Mirage",
+        "Yellow Aura",
+    },
+    CurrentOption = {"Blue Aura"},
+    Callback = function(option)
+        selectedAura = option[1]
+    end,
+})
 
-		for _, gamepass in pairs(gamepassFolder:GetChildren()) do
-			local value = Instance.new("IntValue")
-			value.Name = gamepass.Name
-			value.Value = gamepass.Value
-			value.Parent = player.ownedGamepasses
-		end
-		print("AutoLift gamepasses unlocked!")
-	end,
-	Description = "Unlock AutoLift Passe"
+PetsTab:CreateToggle({
+    Name = "Auto Open Aura",
+    CurrentValue = false,
+    Callback = function(state)
+        _G.AutoHatchAura = state
+        if state then
+            task.spawn(function()
+                while _G.AutoHatchAura and selectedAura ~= "" do
+                    local auraToOpen = ReplicatedStorage.cPetShopFolder:FindFirstChild(selectedAura)
+                    if auraToOpen then
+                        ReplicatedStorage.cPetShopRemote:InvokeServer(auraToOpen)
+                    end
+                    task.wait(0.1)
+                end
+            end)
+        end
+    end,
 })
 
 --========== REBIRTH TAB ==========
@@ -266,56 +470,25 @@ RebirthTab:CreateToggle({
 	end,
 })
 
---========== ROCK TAB ==========
-local function createRockToggle(tab, rockName, durability)
-	tab:CreateToggle({
-		Name = "Auto Farm: " .. rockName,
-		CurrentValue = false,
-		Callback = function(Value)
-			_G["auto_" .. rockName:gsub(" ", "_")] = Value
-
-			if Value then
-				startFastPunch() -- enable fast punch with rocks
-
-				-- rock farming loop
-				task.spawn(function()
-					while _G["auto_" .. rockName:gsub(" ", "_")] do
-						if LocalPlayer.Durability.Value >= durability then
-							for _, v in pairs(Workspace.machinesFolder:GetDescendants()) do
-								if v.Name == "neededDurability" and v.Value == durability and v.Parent and v.Parent:FindFirstChild("Rock") then
-									fireTouchRock(v.Parent.Rock)
-								end
-							end
-						end
-						task.wait()
-					end
-				end)
-			else
-				-- stop fast punch only if no other rock farms are active
-				local anyActive = false
-				for _, obj in pairs(_G) do
-					if tostring(obj):match("auto_") and obj == true then
-						anyActive = true
-						break
-					end
-				end
-				if not anyActive then
-					stopFastPunch()
-				end
-			end
-		end,
-	})
-end
-
-createRockToggle(RockTab, "Tiny Island Rock", 0)
-createRockToggle(RockTab, "Starter Island Rock", 100)
-createRockToggle(RockTab, "Legend Beach Rock", 5000)
-createRockToggle(RockTab, "Frost Gym Rock", 150000)
-createRockToggle(RockTab, "Mythical Gym Rock", 400000)
-createRockToggle(RockTab, "Eternal Gym Rock", 750000)
-createRockToggle(RockTab, "Legend Gym Rock", 1000000)
-createRockToggle(RockTab, "Muscle King Gym Rock", 5000000)
-createRockToggle(RockTab, "Ancient Jungle Rock", 10000000)
+-- Auto Teleport to Muscle King
+RebirthTab:CreateToggle({
+    Name = "Auto Teleport to Muscle King",
+    CurrentValue = false,
+    Callback = function(Value)
+        _G.teleportActive = Value
+        if Value then
+            task.spawn(function()
+                while _G.teleportActive do
+                    local char = game.Players.LocalPlayer.Character
+                    if char and char:FindFirstChild("HumanoidRootPart") then
+                        char:MoveTo(Vector3.new(-8646, 17, -5738))
+                    end
+                    task.wait(1) -- delay to reduce lag
+                end
+            end)
+        end
+    end,
+})
 
 --========== TELEPORT TAB ==========
 TeleportTab:CreateLabel(" Teleport Locations")
@@ -351,179 +524,115 @@ createTPButton("Brawl Lava", CFrame.new(4471, 119, -8836), "Brawl Lava")
 createTPButton("Brawl Desert", CFrame.new(960, 17, -7398), "Brawl Desert")
 createTPButton("Brawl Regular", CFrame.new(-1849, 20, -6335), "Brawl Regular")
 
---========== KILLS TAB ==========
-local KillsTab = Window:CreateTab("Kills", 4483362458)
-local AutoKillEnabled = false
-local autoSizeLoop
-local serverHopLoop
-local LockPosition = CFrame.new(-31.8626, 6.0588, 2087.8867)
-local fileName = "AutoKillMode1.json"
-
--- Memory functions
-local function SaveMemory(state)
-    if writefile then
-        writefile(fileName, tostring(state))
-    end
+--========== CREATE SETTINGS TAB ==========
+if not Window then
+    warn("GUI Window object not found!")
+    return
 end
 
-local function LoadMemory()
-    if isfile and isfile(fileName) then
-        local content = readfile(fileName)
-        return content == "true"
-    end
-    return false
-end
+local SettingsTab = Window:CreateTab("Settings")
 
-local MemoryState = LoadMemory()
-
--- Equip & Punch
-local function EquipPunch()
-    local tool = LocalPlayer.Backpack:FindFirstChild("Punch")
-    if tool then
-        LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):EquipTool(tool)
-    end
-end
-
-local function DoPunch()
-    local char = LocalPlayer.Character
-    if not char then return end
-    local punch = LocalPlayer.Backpack:FindFirstChild("Punch") or char:FindFirstChild("Punch")
-    if punch then
-        if punch:FindFirstChild("attackTime") then
-            punch.attackTime.Value = 0.001
-        end
-        for i = 1, 5 do pcall(function() punch:Activate() end) end
-    end
-end
-
--- Auto Kill Loop
-local function AutoKillLoop(lockPosition)
-    task.spawn(function()
-        while AutoKillEnabled do
-            local char = LocalPlayer.Character
-            if char and char:FindFirstChild("HumanoidRootPart") then
-                if lockPosition then
-                    char.HumanoidRootPart.CFrame = lockPosition
-                end
-                EquipPunch()
-                DoPunch()
-                local rHand = char:FindFirstChild("RightHand")
-                local lHand = char:FindFirstChild("LeftHand")
-                if rHand and lHand then
-                    for _, target in ipairs(Players:GetPlayers()) do
-                        if target ~= LocalPlayer and target.Character then
-                            if not pcall(function() return LocalPlayer:IsFriendsWith(target.UserId) end) or not LocalPlayer:IsFriendsWith(target.UserId) then
-                                local root = target.Character:FindFirstChild("HumanoidRootPart")
-                                if root then
-                                    firetouchinterest(rHand, root, 1)
-                                    firetouchinterest(lHand, root, 1)
-                                    firetouchinterest(rHand, root, 0)
-                                    firetouchinterest(lHand, root, 0)
-                                end
-                            end
-                        end
-                    end
-                end
-            end
-            task.wait(0.01)
-        end
-    end)
-end
-
--- Auto Size NaN
-local function StartAutoSizeNaN()
-    if autoSizeLoop then return end
-    autoSizeLoop = task.spawn(function()
-        while AutoKillEnabled do
-            pcall(function()
-                ReplicatedStorage.rEvents.changeSpeedSizeRemote:InvokeServer("changeSize", 0/0)
-            end)
-            task.wait()
-        end
-    end)
-end
-
-local function StopAutoSizeNaN()
-    if autoSizeLoop then
-        task.cancel(autoSizeLoop)
-        autoSizeLoop = nil
-    end
-end
-
--- Server Hop
-local function StartServerHopLoop()
-    if serverHopLoop then return end
-    serverHopLoop = task.spawn(function()
-        while AutoKillEnabled do
-            task.wait(60)
-            pcall(function()
-                local servers = {}
-                local cursor = ""
-                local gameId = 3623096087
-
-                repeat  
-                    local response = game:HttpGet(
-                        "https://games.roblox.com/v1/games/"..gameId.."/servers/Public?sortOrder=Asc&limit=100"..(cursor ~= "" and "&cursor="..cursor or "")
-                    )  
-                    local data = HttpService:JSONDecode(response)  
-                    for _, server in ipairs(data.data) do  
-                        if server.playing >= 15 and server.playing <= 20 and server.id ~= game.JobId then  
-                            TeleportService:TeleportToPlaceInstance(gameId, server.id, LocalPlayer)  
-                            return  
-                        end  
-                    end  
-                    cursor = data.nextPageCursor or ""  
-                until cursor == "" or not cursor  
-            end)  
-        end  
-    end)
-end
-
-local function StopServerHopLoop()
-    if serverHopLoop then
-        task.cancel(serverHopLoop)
-        serverHopLoop = nil
-    end
-end
-
---========== GUI CONTROL (ONE SWITCH) ==========
-KillsTab:CreateToggle({
-    Name = "OP KILLING",
-    CurrentValue = MemoryState or false,
+--========== AUTO FORTUNE WHEEL ==========
+SettingsTab:CreateToggle({
+    Name = "Auto Fortune Wheel",
+    CurrentValue = false,
     Callback = function(Value)
-        AutoKillEnabled = Value
-        SaveMemory(Value)
+        _G.autoFortuneWheelActive = Value
         if Value then
-            AutoKillLoop(LockPosition)
-            StartAutoSizeNaN()
-            StartServerHopLoop()
-        else
-            StopAutoSizeNaN()
-            StopServerHopLoop()
+            task.spawn(function()
+                while _G.autoFortuneWheelActive do
+                    local args = {
+                        [1] = "openFortuneWheel",
+                        [2] = game:GetService("ReplicatedStorage"):WaitForChild("fortuneWheelChances"):WaitForChild("Fortune Wheel")
+                    }
+                    game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("openFortuneWheelRemote"):InvokeServer(unpack(args))
+                    task.wait() -- prevent freezing
+                end
+            end)
         end
-    end
+    end,
 })
 
--- Auto-enable if memory saved ON
-if MemoryState then
-    AutoKillEnabled = true
-    AutoKillLoop(LockPosition)
-    StartAutoSizeNaN()
-    StartServerHopLoop()
+--========== GOD MODE (BRAWL) ==========
+local godModeActive = false
+local godParts = {}
+local partSize = 2048
+local totalDistance = 50000
+local startPosition = Vector3.new(-2, -9.5, -2)
+local numberOfParts = math.ceil(totalDistance / partSize)
+
+local function createGodParts()
+    for x = 0, numberOfParts - 1 do
+        for z = 0, numberOfParts - 1 do
+            local positions = {
+                {"Part_Side_", Vector3.new(x * partSize, 0, z * partSize)},
+                {"Part_LeftRight_", Vector3.new(-x * partSize, 0, z * partSize)},
+                {"Part_UpLeft_", Vector3.new(-x * partSize, 0, -z * partSize)},
+                {"Part_UpRight_", Vector3.new(x * partSize, 0, -z * partSize)},
+            }
+            for _, posData in ipairs(positions) do
+                local newPart = Instance.new("Part")
+                newPart.Size = Vector3.new(partSize, 1, partSize)
+                newPart.Position = startPosition + posData[2]
+                newPart.Anchored = true
+                newPart.Transparency = 1
+                newPart.CanCollide = true
+                newPart.Name = posData[1] .. x .. "_" .. z
+                newPart.Parent = workspace
+                table.insert(godParts, newPart)
+            end
+        end
+    end
 end
 
---========== SETTINGS TAB ==========
-local SettingsTab = Window:CreateTab("Settings", 4483362458)
-
-SettingsTab:CreateSection("Utilities")
+local function removeGodParts()
+    for _, part in ipairs(godParts) do
+        if part and part.Parent then
+            part:Destroy()
+        end
+    end
+    godParts = {}
+end
 
 SettingsTab:CreateToggle({
-    Name = "💤 Anti-AFK",
+    Name = "God Mode (Brawl)",
     CurrentValue = false,
-    Flag = "AntiAFK",
-    Callback = function(state)
-        if state then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/evxncodes/mainroblox/main/anti-afk", true))()
+    Callback = function(State)
+        godModeActive = State
+        if State then
+            task.spawn(function()
+                while godModeActive do
+                    game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl")
+                    task.wait()
+                end
+            end)
+            createGodParts()
+        else
+            removeGodParts()
         end
-    end
+    end,
 })
+
+--========== ANTI KNOCKBACK ==========
+SettingsTab:CreateToggle({
+    Name = "Anti Knockback",
+    CurrentValue = false,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        local char = player.Character or player.CharacterAdded:Wait()
+        local rootPart = char:WaitForChild("HumanoidRootPart")
+
+        if Value then
+            if not rootPart:FindFirstChild("AntiKnockback") then
+                local bodyVelocity = Instance.new("BodyVelocity")
+                bodyVelocity.Name = "AntiKnockback"
+                bodyVelocity.MaxForce = Vector3.new(1e5, 0, 1e5)
+                bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+                bodyVelocity.P = 1250
+                bodyVelocity.Parent = rootPart
+            end
+        else
+            local existingVelocity = rootPart:FindFirstChild("AntiKnockback")
+            if existingVelocity then
+                existingVelocity:Destroy()
+   
